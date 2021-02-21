@@ -1,24 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body {
-	font-family: 'Poppins';
+  font-family: 'Poppins';
+  background-color: rgb(156, 131, 180);
+  width: 80%;
+  margin: auto;
 }
 
-main {
+.logo img {
+  height: 40px;
+  width: 120px;
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  text-decoration: none;
+
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
 }
 
 .cardscontainer {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	justify-content: center;
-	border: solid 2px black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  border: solid 2px black;
 }
 
 .cards {
-	text-align: center;
-	margin: 10px;
-	border: 2px solid black;
-	display: flex;
-	flex-direction: column;
-	font-weight: 400;
+  text-align: center;
+  margin: 10px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.pokemon__img {
+  width: 200px;
+}
+
+.heading {
+  text-align: center;
+}
+
+/* Contactform */
+
+.formDiv {
+  border: solid 2px black;
+  border-radius: 5px;
+  margin-top: 140px;
+  padding: 20px;
+  background-color: rgb(226, 227, 255);
+}
+
+input[type='text'] {
+  width: 100%;
+  height: 20px;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.error {
+  color: red;
+  display: none;
+}
+
+button {
+  margin-top: 30px;
+  background-color: rgb(103, 104, 168);
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+}
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
