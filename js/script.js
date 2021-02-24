@@ -6,7 +6,7 @@ async function getPokemon() {
     console.log(pokemonResults);
 
     for (let i = 0; i < pokemonResults.length; i++) {
-      if (i === 100) {
+      if (i === 30) {
         break;
       }
 

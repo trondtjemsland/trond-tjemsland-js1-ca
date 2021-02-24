@@ -23,10 +23,14 @@ async function getPokemonId(pokemonId) {
     document.querySelector('h1').innerHTML = `${data.name}`;
     document.querySelector(
       '.detailsimg'
-    ).style.backgroundImage = `url('${data.images.large}')`;
+    ).style.backgroundImage = `url('${data.images.small}')`;
     document.querySelector('.rarity').innerHTML = `${data.rarity}`;
     document.querySelector('.types').innerHTML = `${data.types}`;
-    document.querySelector('.desc').innerHTML = `${data.flavorText}`;
+    if (data.flavorText === undefined) {
+      document.querySelector('.desc').innerHTML = `No flavor text`;
+    } else {
+      document.querySelector('.desc').innerHTML = `${data.flavorText}`;
+    }
   } catch (error) {
     document.querySelector('.alert').innerHTML += showAlertTouser(
       error,
