@@ -20,10 +20,10 @@ async function getPokemonId(pokemonId) {
     const data = jsonResults.data;
 
     document.title = data.name;
-    document.querySelector('h1').innerHTML = `${data.name}`;
     document.querySelector(
       '.detailsimg'
     ).style.backgroundImage = `url('${data.images.small}')`;
+    document.querySelector('h1').innerHTML = `${data.name}`;
     document.querySelector('.rarity').innerHTML = `${data.rarity}`;
     document.querySelector('.types').innerHTML = `${data.types}`;
     if (data.flavorText === undefined) {
