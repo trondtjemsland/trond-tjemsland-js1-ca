@@ -37,10 +37,27 @@ ul {
   list-style: none;
 }
 
+.homebg {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeimage {
+  height: 600px;
+}
+
+.hometxt {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
 .cardscontainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 70px;
 }
 
 .buttoncontainer {
@@ -69,6 +86,7 @@ ul {
 
 .heading {
   text-align: center;
+  margin-top: 80px;
 }
 
 /* Contactform */

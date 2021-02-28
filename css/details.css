@@ -4,11 +4,14 @@ main {
 }
 
 .pokemonInfo {
-  border: solid 2px yellowgreen;
   text-align: center;
   margin: auto;
   display: flex;
-  height: 400px;
+  width: 700px;
+  background-color: rgb(215, 190, 238);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 200px;
 }
 
 .detailsimg {
