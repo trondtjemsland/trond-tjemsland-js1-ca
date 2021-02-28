@@ -14,7 +14,9 @@ async function getPokemon() {
                 <div class="cards">
                     <h2>${pokemonResults[i].name}</h2>
                     <img class="pokemon__img" src="${pokemonResults[i].images.small}"/>
-                    <a class="button" href="details.html?id=${pokemonResults[i].id}"><p>Click for more</p></a>
+                    <div class="buttoncontainer"> 
+                      <a class="button" href="details.html?id=${pokemonResults[i].id}">Click for more</a>
+                    </div>  
                 </div>
             `;
       console.log(pokemonResults[i].id);
